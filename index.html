@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lolita Kids · Zapatería infantil · Lloret de Mar</title>
+<meta name="description" content="Lolita Kids, sabateria infantil en el Carrer dels Horts, 2 de Lloret de Mar: calzado de las primeras marcas en todas las tallas, desde los primeros pasos. Mide el pie de tu peque en la web y ven a probártelo. Punto de recogida Mondial Relay.">
+<meta name="theme-color" content="#2F8FE0">
+<meta property="og:title" content="Lolita Kids · Lloret de Mar">
+<meta property="og:description" content="¿Qué número calza? Mídelo aquí y ven a probártelo.">
+<meta property="og:image" content="assets/img/tienda-00.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%238CC63F'/%3E%3Cellipse cx='32' cy='38' rx='11' ry='15' fill='%23fff'/%3E%3Ccircle cx='22' cy='17' r='4' fill='%23fff'/%3E%3Ccircle cx='31' cy='14' r='4.5' fill='%23fff'/%3E%3Ccircle cx='40' cy='17' r='4' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="logo" href="#top" aria-label="Lolita Kids, inicio"><span class="logo__l">Lolita</span><span class="logo__k">kids</span></a>
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#medidor">Mide su pie</a>
+    <a href="#etapas">Por etapas</a>
+    <a href="#parejas">Juego</a>
+    <a href="#tienda">La tienda</a>
+    <a href="#visita">Horario</a>
+  </nav>
+  <a class="nav__call" href="tel:+34673561950"><i class="ph-fill ph-phone"></i><span>673 56 19 50</span></a>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menú"><span></span><span></span></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#medidor">Mide su pie</a><a href="#etapas">Por etapas</a><a href="#parejas">Juego</a><a href="#tienda">La tienda</a><a href="#visita">Horario</a>
+</div>
+
+<main id="top">
+
+  <!-- ============ PORTADA ============ -->
+  <section class="hero">
+    <svg class="steps-trail" id="trail" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+    <div class="hero__copy">
+      <p class="pill"><i class="ph-fill ph-sparkle"></i> Sabateria infantil · Lloret de Mar</p>
+      <h1 class="hero__title" aria-label="Lolita Kids"><span class="bounce" id="bounce">Lolita</span><span class="hero__kids">kids</span></h1>
+      <p class="hero__lead">Calzado de las primeras marcas en todas las tallas, desde los primeros pasos hasta el cole. Antes de venir, mide su pie aquí: te decimos qué número buscar.</p>
+      <div class="hero__cta">
+        <a class="btn btn--blue" href="#medidor"><i class="ph-fill ph-ruler"></i><span>Mide su pie</span></a>
+        <a class="btn btn--white" href="#parejas"><i class="ph-fill ph-game-controller"></i><span>Juega a las parejas</span></a>
+      </div>
+    </div>
+    <figure class="hero__pic">
+      <img src="assets/img/tienda-00.jpg" alt="Interior de Lolita Kids: el coche amarillo lleno de zapatos, paredes verdes y azules, globos y la mesa de juguetes" fetchpriority="high">
+      <span class="balloon balloon--a" aria-hidden="true"></span>
+      <span class="balloon balloon--b" aria-hidden="true"></span>
+      <span class="balloon balloon--c" aria-hidden="true"></span>
+    </figure>
+  </section>
+
+  <!-- ============ EL MEDIDOR ============ -->
+  <section class="medidor" id="medidor">
+    <header class="sec-head sec-head--center">
+      <p class="pill pill--y">Interactivo</p>
+      <h2 class="h2">¿Qué número <span class="hl">calza</span>?</h2>
+      <p class="lead">Ponlo de pie sobre un folio, con la espalda recta. Marca el talón y la punta del dedo más largo, mide en centímetros y arrastra el tope del medidor hasta esa medida.</p>
+    </header>
+    <div class="medidor__grid">
+      <div class="gauge" id="gauge">
+        <svg viewBox="0 0 300 560" class="gauge__svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="plate" x1="0" x2="1"><stop offset="0" stop-color="#E9F4FF"/><stop offset="1" stop-color="#D6EAFF"/></linearGradient>
+          </defs>
+          <rect x="20" y="10" width="260" height="540" rx="38" fill="#2F8FE0"/>
+          <rect x="44" y="34" width="212" height="492" rx="26" fill="url(#plate)"/>
+          <g id="ticks"></g>
+          <g id="footG"><path id="foot" fill="#FFD7B5" stroke="#E9A97A" stroke-width="3" d=""/><g id="toes"></g></g>
+          <g id="slider" class="gauge__slider"><rect x="30" y="0" width="240" height="22" rx="11" fill="#FFC928" stroke="#E0A800" stroke-width="2"/><rect x="132" y="6" width="36" height="10" rx="5" fill="#E0A800"/></g>
+          <rect x="30" y="512" width="240" height="26" rx="13" fill="#8CC63F"/>
+          <text x="150" y="530" text-anchor="middle" font-family="Fredoka, sans-serif" font-size="13" fill="#fff" font-weight="600">TALÓN AQUÍ</text>
+        </svg>
+        <p class="gauge__hint"><i class="ph-fill ph-hand-pointing"></i> Arrastra el tope amarillo</p>
+      </div>
+      <div class="result" aria-live="polite">
+        <div class="result__big"><small>Su número</small><b id="rSize">24</b><span>europeo</span></div>
+        <dl class="result__dl">
+          <div><dt>Largo del pie</dt><dd id="rFoot">15,0 cm</dd></div>
+          <div><dt>Margen para crecer</dt><dd>+ 1,2 cm</dd></div>
+          <div><dt>Suele corresponder a</dt><dd id="rAge">2 – 3 años</dd></div>
+          <div><dt>Revisa la talla</dt><dd id="rCheck">cada 3 – 4 meses</dd></div>
+        </dl>
+        <label class="result__range"><span>Ajuste fino</span><input type="range" id="cm" min="9.5" max="23" step="0.1" value="15" aria-label="Largo del pie en centímetros"></label>
+        <p class="result__fine">Cálculo orientativo: cada marca horma distinto. En la tienda medimos el pie y lo probamos con calma.</p>
+        <a class="btn btn--green" id="callSize" href="tel:+34673561950"><i class="ph-fill ph-phone-call"></i><span>Llamar y preguntar por el 24</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POR ETAPAS (carrusel) ============ -->
+  <section class="etapas" id="etapas">
+    <header class="sec-head">
+      <p class="pill pill--g">De los primeros pasos al cole</p>
+      <h2 class="h2">Por <span class="hl hl--g">etapas</span></h2>
+    </header>
+    <div class="belt" id="belt"><div class="belt__track" id="beltTrack"></div></div>
+    <div class="belt__ui">
+      <button class="round" type="button" id="beltPrev" aria-label="Anterior"><i class="ph-fill ph-caret-left"></i></button>
+      <div class="belt__dots" id="beltDots"></div>
+      <button class="round" type="button" id="beltNext" aria-label="Siguiente"><i class="ph-fill ph-caret-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ============ JUEGO DE PAREJAS ============ -->
+  <section class="parejas" id="parejas">
+    <div class="parejas__copy">
+      <p class="pill pill--y">Para los peques</p>
+      <h2 class="h2">Los zapatos van <span class="hl">por parejas</span></h2>
+      <p class="lead">Dale la vuelta a dos cartas: si son el mismo zapato, se quedan. ¿Cuántos intentos necesitas para emparejar los seis?</p>
+      <p class="score"><span>Intentos <b id="moves">0</b></span><span>Parejas <b id="pairs">0</b>/6</span></p>
+      <button class="btn btn--blue" type="button" id="restart"><i class="ph-fill ph-arrows-clockwise"></i><span>Barajar otra vez</span></button>
+      <p class="win" id="win" hidden>¡Bravo! Todas las parejas en <b id="winMoves">0</b> intentos.</p>
+    </div>
+    <div class="memo" id="memo" aria-label="Juego de memoria con zapatos"></div>
+  </section>
+
+  <!-- ============ LA TIENDA ============ -->
+  <section class="tienda" id="tienda">
+    <div class="tienda__pic">
+      <img src="assets/img/d-juguetes.jpg" alt="La mesa de juguetes de la tienda" loading="lazy" class="tienda__toy">
+      <img src="assets/img/d-banco.jpg" alt="El banco azul con escalones para probarse los zapatos" loading="lazy" class="tienda__bench">
+    </div>
+    <div class="tienda__copy">
+      <p class="pill pill--g">La tienda</p>
+      <h2 class="h2">Mientras se los <span class="hl hl--g">prueba</span>…</h2>
+      <p class="lead">…hay una mesa con juguetes para que los peques se entretengan, un banco con escalones para sentarse y un coche amarillo cargado de zapatos.</p>
+      <ul class="bubbles">
+        <li>«La atención es inmejorable. Muy profesional: siempre aconseja el zapato adecuado para mi bebé.»</li>
+        <li>«Gran surtido de zapatos y dependienta muy atenta. Tienen una mesa con juguetes para los peques.»</li>
+      </ul>
+      <p class="relay"><i class="ph-fill ph-package"></i><span><b>Punto de recogida Mondial Relay.</b> Envía y recoge tus paquetes aquí.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ PARA MAMÁ ============ -->
+  <section class="mama">
+    <figure class="mama__vid"><video src="assets/video/bota-cristal.mp4" poster="assets/img/v-bota-cristal.jpg" muted loop playsinline preload="none" aria-label="Bota de cristales en el podio de Lolita Shoes"></video></figure>
+    <div class="mama__copy">
+      <p class="pill pill--w">Y para los mayores</p>
+      <h2 class="h2">La familia <span class="hl">Lolita</span></h2>
+      <p class="lead">Mientras los peques estrenan zapatos, en el centro te esperan las otras tiendas Lolita, con calzado, bolsos y moda de temporada.</p>
+      <div class="mama__links">
+        <a href="https://francybio.github.io/lolita-shoes-lloret/" target="_blank" rel="noopener"><b>Lolita Shoes</b><span>Carrer de la Vila, 52</span><i class="ph-fill ph-arrow-circle-up-right"></i></a>
+        <a href="https://francybio.github.io/lolita-fashion-lloret/" target="_blank" rel="noopener"><b>Lolita</b><span>Carrer de la Vila, 30</span><i class="ph-fill ph-arrow-circle-up-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visita" id="visita">
+    <div class="visita__card">
+      <p class="pill pill--y">Ven a vernos</p>
+      <h2 class="h2">Carrer dels <span class="hl">Horts</span>, 2</h2>
+      <table class="hours" id="hours" aria-label="Horario">
+        <tbody>
+          <tr data-d="1"><th>Lunes</th><td>9:30–13:30 · 16:30–20:30</td></tr>
+          <tr data-d="2"><th>Martes</th><td>9:30–13:30 · 16:30–20:30</td></tr>
+          <tr data-d="3"><th>Miércoles</th><td>9:30–13:30 · 16:30–20:30</td></tr>
+          <tr data-d="4"><th>Jueves</th><td>9:30–13:30 · 16:30–20:30</td></tr>
+          <tr data-d="5"><th>Viernes</th><td>9:30–13:30 · 16:30–20:30</td></tr>
+          <tr data-d="6"><th>Sábado</th><td>9:30–13:30 · 16:30–20:30</td></tr>
+          <tr data-d="0"><th>Domingo</th><td>Cerrado</td></tr>
+        </tbody>
+      </table>
+      <p class="live" data-live><i></i><span data-live-text>Horario</span></p>
+      <div class="visita__btns">
+        <a class="btn btn--blue" href="tel:+34673561950"><i class="ph-fill ph-phone"></i><span>673 56 19 50</span></a>
+        <a class="btn btn--white" href="https://www.instagram.com/lolitashoes2012/" target="_blank" rel="noopener"><i class="ph-fill ph-instagram-logo"></i><span>Instagram</span></a>
+      </div>
+    </div>
+    <figure class="visita__pic"><img src="assets/img/tienda-02.jpg" alt="Fachada de Lolita Kids con el rótulo verde iluminado" loading="lazy"></figure>
+    <div class="visita__map"><iframe title="Mapa: Lolita Kids, Carrer dels Horts 2, Lloret de Mar" src="https://maps.google.com/maps?q=Sabateria%20Infantil%20Lolita%20Kids%2C%20Carrer%20dels%20Horts%202%2C%20Lloret%20de%20Mar&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__big" aria-hidden="true">Lolita <span>kids</span></p>
+  <div class="foot__row">
+    <span>Sabateria Infantil Lolita Kids · Carrer dels Horts, 2 · Lloret de Mar</span>
+    <span>Fotos: Google · vídeo: Instagram @lolitashoes2012</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
